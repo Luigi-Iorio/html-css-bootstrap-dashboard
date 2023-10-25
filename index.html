@@ -35,7 +35,76 @@
   </head>
   <body>
     <!-- header -->
-    <header></header>
+    <header>
+      <nav class="navbar navbar-lg">
+        <div class="container-fluid">
+          <!-- logo -->
+          <a class="navbar-brand d-xs-block d-lg-none" href="#"
+            ><img class="img-fluid" src="img/mobile-logo.png" alt="logo"
+          /></a>
+          <a class="navbar-brand d-none d-lg-block" href="#"
+            ><img class="img-fluid" src="img/logo.svg" alt="logo"
+          /></a>
+          <!-- /logo -->
+
+          <!-- ricerca -->
+          <form class="d-flex flex-grow-1" role="search">
+            <div
+              class="input-group-text bg-body-secondary rounded-0 rounded-start border-0"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <input
+              class="form-control text-light bg-body-secondary me-2 rounded-0 rounded-end border-0"
+              type="search"
+              placeholder="Prova a cercare: Lezioni di Laravel"
+              aria-label="Search"
+            />
+          </form>
+          <!-- /ricerca -->
+
+          <!-- link -->
+          <div class="flex-grow-0">
+            <ul class="d-flex list-unstyled ms-auto mb-0">
+              <li class="nav-item mx-2 d-none d-lg-block">
+                <a class="nav-link" href="#"
+                  ><i class="fa-solid fa-list-ul"></i
+                ></a>
+              </li>
+              <li class="nav-item mx-2 d-none d-lg-block">
+                <a class="nav-link" href="#"
+                  ><i class="fa-solid fa-ellipsis-vertical"></i
+                ></a>
+              </li>
+              <li class="nav-item mx-2 d-none d-lg-block">
+                <a class="nav-link" href="#"
+                  ><i class="fa-solid fa-circle-question"></i
+                ></a>
+              </li>
+              <li class="nav-item dropstart ms-2">
+                <a
+                  class="nav-link"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa-solid fa-bell"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Profilo</a></li>
+                  <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Logout</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- /link -->
+        </div>
+      </nav>
+    </header>
     <!-- /header -->
 
     <!-- main -->
