@@ -19,3 +19,25 @@ header nav a:first-child {
 .fa-bell {
   color: #ff8f00;
 }
+
+/* MAIN */
+main {
+  height: calc(100vh - 70px);
+}
+
+main nav {
+  color: white;
+  width: 70px;
+  height: 100%;
+  background-image: url(/img/sidebar-bg.png);
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #051e34;
+}
+
+@media screen and (min-width: 992px) {
+  main nav {
+    width: 150px;
+  }
+}
