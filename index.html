@@ -108,7 +108,7 @@
     <!-- /header -->
 
     <!-- main -->
-    <main>
+    <main class="d-flex">
       <!-- nav laterale -->
       <nav class="d-flex flex-column align-items-center py-3">
         <!-- top -->
@@ -156,6 +156,156 @@
         <!-- /bottom -->
       </nav>
       <!-- /nav laterale -->
+      <!-- dashboard -->
+      <div class="dashboard">
+        <!-- top -->
+        <div class="top bg-primary text-light px-3 py-4">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="d-flex align-items-center">
+                <h2>Boolean</h2>
+                <span class="badge mx-1">Piano base</span>
+              </div>
+              <nav
+                style="--bs-breadcrumb-divider: '>>'"
+                aria-label="breadcrumb"
+              >
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <div class="badge">3 app</div>
+                  </li>
+                  <li class="breadcrumb-item mx-1 d-none d-lg-block">
+                    <div class="badge">Boolean mobile app</div>
+                  </li>
+                  <li class="mx-1 d-none d-lg-block">
+                    <div class="badge">Boolean web app</div>
+                  </li>
+                  <li class="mx-1 d-none d-lg-block">
+                    <div class="badge">Boolean blog app</div>
+                  </li>
+                  <li class="mx-1 d-block d-lg-none">
+                    <div class="badge">+</div>
+                  </li>
+                </ol>
+              </nav>
+            </div>
+
+            <div class="col-12 col-md-3">
+              <h6>Studenti online negli ultimi 30 minuti</h6>
+              <h6 class="fs-1">125</h6>
+            </div>
+
+            <div class="col-12 col-md-3">
+              <h6>
+                Nuovo Studente
+                <button
+                  class="btn btn-outline-light mx-2"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight"
+                >
+                  <i class="fa-regular fa-plus align-middle fs-3"></i>
+                </button>
+              </h6>
+              <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel"
+              >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvas">
+                    Inserisci un nuovo studente
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <form class="row g-3">
+                    <div class="col-md-6">
+                      <label for="name" class="form-label">Nome</label>
+                      <input type="text" class="form-control" id="name" />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="surname" class="form-label">Cognome</label>
+                      <input type="text" class="form-control" id="surname" />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="email" class="form-label">Email</label>
+                      <div class="input-group">
+                        <div class="input-group-text">@</div>
+                        <input type="email" class="form-control" id="email" />
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="password" class="form-label">Password</label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="password"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <label for="adress" class="form-label">Indirizzo</label>
+                      <input type="text" class="form-control" id="adress" />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="city" class="form-label">Città</label>
+                      <input type="text" class="form-control" id="city" />
+                    </div>
+                    <div class="col-md-4">
+                      <label for="state" class="form-label">Stato</label>
+                      <select id="state" class="form-select">
+                        <option selected>Scegli...</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="col-md-2">
+                      <label for="cap" class="form-label">CAP</label>
+                      <input type="text" class="form-control" id="cap" />
+                    </div>
+                    <div class="col-12">
+                      <label for="upload" class="form-label">Foto</label>
+                      <input
+                        type="file"
+                        class="form-control"
+                        id="upload"
+                        aria-describedby="inputGroupFileAddon04"
+                        aria-label="Upload"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="gridCheck"
+                        />
+                        <label class="form-check-label" for="gridCheck">
+                          Seleziona per proseguire
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary">
+                        Salva
+                      </button>
+                      <button type="reset" class="btn bg-warning">Reset</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /top -->
+      </div>
+      <!-- /dashboard -->
     </main>
     <!-- /main -->
 
