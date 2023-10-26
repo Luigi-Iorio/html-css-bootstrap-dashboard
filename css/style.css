@@ -25,6 +25,11 @@ main {
   height: calc(100vh - 70px);
 }
 
+/* nav laterale */
+ul .hover-menu:hover {
+  background-color: rgb(164, 164, 164);
+}
+
 main > nav {
   color: white;
   width: 70px;
@@ -47,18 +52,22 @@ main > nav {
   overflow: auto;
 }
 
+/* top dashboard */
 .top .badge {
   background-color: #165bba;
-}
-
-ul .hover-menu:hover {
-  background-color: rgb(164, 164, 164);
 }
 
 .top .offcanvas.offcanvas-end {
   width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .top .offcanvas.offcanvas-end {
+    width: calc(var(--bs-offcanvas-width) + 200px);
+  }
+}
+
+/* bottom dashboard */
 table img {
   width: 30px;
 }
@@ -71,10 +80,4 @@ table img {
   height: 100%;
   width: 100%;
   object-fit: contain;
-}
-
-@media screen and (min-width: 768px) {
-  .top .offcanvas.offcanvas-end {
-    width: calc(var(--bs-offcanvas-width) + 200px);
-  }
 }
