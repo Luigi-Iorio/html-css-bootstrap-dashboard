@@ -29,9 +29,8 @@ main > nav {
   color: white;
   width: 70px;
   height: 100%;
-  background-image: url(/img/sidebar-bg.png);
-  background-position-y: center;
-  background-repeat: no-repeat;
+  background-image: url(../img/sidebar-bg.png);
+  background-position: center;
   background-size: cover;
   background-color: #051e34;
 }
@@ -45,6 +44,7 @@ main > nav {
 /* dashboard */
 .dashboard {
   width: 100%;
+  overflow: auto;
 }
 
 .top .badge {
