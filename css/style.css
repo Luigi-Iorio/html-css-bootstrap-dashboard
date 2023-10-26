@@ -58,3 +58,13 @@ main > nav {
 table img {
   width: 30px;
 }
+
+.bottom .img-stats {
+  max-height: 400px;
+}
+
+.bottom .img-stats img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
