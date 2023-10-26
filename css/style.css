@@ -54,3 +54,7 @@ main > nav {
 .top .offcanvas.offcanvas-end {
   width: calc(var(--bs-offcanvas-width) + 200px);
 }
+
+table img {
+  width: 30px;
+}
